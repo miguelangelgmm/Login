@@ -1,0 +1,121 @@
+
+#heart1,#heart2,#heart3 {
+  translate: 0%;
+}
+
+#heart1 {
+  animation: heart-animation 3s linear forwards infinite;
+}
+@keyframes heart-animation {
+  0% { 
+    transform: scaleX(1) scaleY(1);  
+    fill-opacity: 0.2;
+  }
+  25%{
+    transform: scaleX(0.95) scaleY(0.9);  
+    fill-opacity: 0.7;
+  }
+  
+  50% { 
+    transform: scaleX(0.9) scaleY(0.80);  
+    fill-opacity: 1;
+}
+  75% { 
+    transform: scaleX(0.86) scaleY(0.7);  
+    fill-opacity: 0.7;
+
+  }
+  100% { 
+    transform: scaleX(0.80) scaleY(0.67);  
+    fill-opacity: 0;
+  }
+}
+
+
+#heart2 {
+  animation: heart-animation2 2.5s linear forwards infinite;
+}
+@keyframes heart-animation2 {
+  0% { 
+    transform: scaleX(1.05) scaleY(1.1);  
+    fill-opacity: 0.2;
+  }
+  25%{
+    transform: scaleX(1.0) scaleY(0.9);  
+    fill-opacity: 1;
+  }
+  
+  50% { 
+    transform: scaleX(0.95) scaleY(0.80);  
+    fill-opacity: 1;
+}
+  75% { 
+    transform: scaleX(0.86) scaleY(0.7);  
+    fill-opacity: 1;
+
+  }
+  100% { 
+    transform: scaleX(0.80) scaleY(0.67);  
+    fill-opacity: 0;
+  }
+}
+
+
+#heart3 {
+  animation-delay: 1s;
+  animation: heart-animation3 1.8s linear forwards infinite;
+}
+@keyframes heart-animation3 {
+  0% { 
+    transform: scaleX(1) scaleY(1);  
+    fill-opacity: 0.2;
+  }
+  25%{
+    transform: scaleX(0.95) scaleY(0.9);  
+    fill-opacity: 1;
+  }
+  
+  50% { 
+    transform: scaleX(0.90) scaleY(0.80);  
+    fill-opacity: 1;
+}
+  75% { 
+    transform: scaleX(0.86) scaleY(0.7);  
+    fill-opacity: 1;
+
+  }
+  100% { 
+    transform: scaleX(0.80) scaleY(0.67);  
+    fill-opacity: 0;
+  }
+}
+
+#heart4 {
+  animation: heart-animation4 1.8s linear forwards infinite;
+  fill: 0;
+  animation-delay: 0.4s;
+}
+@keyframes heart-animation4 {
+  0% { 
+    transform: scaleX(1) scaleY(1);  
+    fill-opacity: 0.2;
+  }
+  25%{
+    transform: scaleX(0.95) scaleY(0.9);  
+    fill-opacity: 1;
+  }
+  
+  50% { 
+    transform: scaleX(0.90) scaleY(0.80);  
+    fill-opacity: 1;
+}
+  75% { 
+    transform: scaleX(0.85) scaleY(0.7);  
+    fill-opacity: 1;
+
+  }
+  100% { 
+    transform: scaleX(0.8) scaleY(0.67);  
+    fill-opacity: 0;
+  }
+}

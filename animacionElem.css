@@ -1,0 +1,12 @@
+.change-transition {
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.indexUp{
+
+    z-index: 5;
+}
+.indexDown{
+    z-index: 0;
+}
