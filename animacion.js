@@ -30,8 +30,7 @@ function swapElements() {
             elem1.style.transform = `translateX(${parentRight}px)`;
             // Desplaza elem2 a la izquierda
             elem2.style.transform = `translateX(-${parentRight}px)`;
-            textButton.innerHTML = "Registrarse";
-
+            
             changeView(registerView,loginView)
 
 
@@ -39,7 +38,6 @@ function swapElements() {
             //regresan a su posición
             elem1.style.transform = `translateX(-${parentRight}px)`;
             elem2.style.transform = `translateX(${parentRight}px)`;
-            textButton.innerHTML = "Iniciar Sesión";
 
             changeView(loginView,registerView)
 
@@ -83,14 +81,14 @@ function swapElements() {
             elem1.removeAttribute('style');
             elem2.removeAttribute('style');
             if (!swapped) {
-                console.log("volvemos")
+
                 parent.insertBefore(elem1, elem2);
-                textButton.innerHTML = "Registrarse";
+                textButton.innerHTML = "Iniciar Sesión";
 
             } else {
-                console.log("aqui estamos")
+
                 parent.insertBefore(elem2, elem1);
-                textButton.innerHTML = "Iniciar Sesión";
+                textButton.innerHTML = "Registrarse";
 
             }
             animationComplete = true;
